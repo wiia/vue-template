@@ -1,5 +1,10 @@
-# vue-templete
+# vue-template
+my custom template  for scaffolding Vue.js projects based on [vuejs-templates/webpack](https://github.com/vuejs-templates/webpack)
 
+    $ vue init wiia/vue-template <project-name>
+
+
+---
 ## css-lib
 ###reset.less
 css reset 本身是追求`复用性`的产物，但是它自带的`全局设置`特点有时候也会带来负面影响；（当然 normalize.css 和这里不同，完全是根据另外一种原则。）
