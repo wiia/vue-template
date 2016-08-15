@@ -1,0 +1,45 @@
+.ui-avatar-span(@avatarSize) {
+	display: inline-block;
+	width: @avatarSize;
+	height: @avatarSize;
+	border-radius: @avatarSize/2;
+	background: center/cover;
+}
+.ui-wrap(@maxWidth, @minWidth) {
+	max-width: @maxWidth;
+	min-width: @minWidth;
+	margin: 0 auto;
+}
+.ui-wrap-1080() {
+	max-width: 1080px;
+	min-width: 980px;
+	margin: 0 auto;
+}
+.ui-triangle(@direction: top, @height: 10px, @widthLeft: 5px, @widthLeft: 5px, @color: #000) {
+	display: inline-block;
+	width: 0;
+	height: 0;
+}
+.ui-triangle(@direction: top, @height: 10px, @widthLeft: 5px, @widthLeft: 5px) when (@direction = bottom){
+	border-style: solid dashed dashed dashed;
+	border-width: @height @widthLeft 0 @widthRight;
+	border-color: @color transparent transparent transparent;
+}
+.ui-triangle(@direction: top, @height: 10px, @widthLeft: 5px, @widthLeft: 5px) when (@direction = left){
+	border-style: dashed solid dashed dashed;
+	border-width: @widthRight @height @widthLeft 0;
+	border-color: transparent @color transparent transparent;
+}
+.ui-triangle(@direction: top, @height: 10px, @widthLeft: 5px, @widthLeft: 5px) when (@direction = top){
+	border-style: dashed dashed solid dashed;
+	border-width: 0 @widthRight @height @widthLeft;
+	border-color: transparent transparent @color transparent;
+}
+.ui-triangle(@direction: top, @height: 10px, @widthLeft: 5px, @widthLeft: 5px) when (@direction = right){
+	border-style: dashed dashed dashed solid;
+	border-width: @widthLeft 0 @widthLeft @height;
+	border-color: transparent transparent transparent @color;
+}
+
+
+
